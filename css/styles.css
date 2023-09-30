@@ -14,7 +14,7 @@ body {
   background-color: #f2f2f2;
   min-height: 100vh;
   scroll-behavior: smooth;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 html {
@@ -208,7 +208,7 @@ nav #marker {
 /*** SERVICES START ***/
 .services-icons {
   max-height: 10vh;
-  /*max-width: auto;*/
+  max-width: auto;
   align-items: center;
   align-content: center;
   background: url(icons/implant.png);
