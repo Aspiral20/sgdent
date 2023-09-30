@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SG-Dent.md | Clinica Stomatologica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/infinite-slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link rel="shortcut icon" href="images/sg-logo.png" type="image/png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="com/css/css.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+	
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">SG-Dent</a>
+		<nav>
+			<div id="marker"></div>
+			<a href="#">Acasa</a>
+			<a href="#servicii">Servicii</a>
+			<a href="#echipa">Echipa</a>
+			<a href="#despre-noi">Despre noi</a>
+			<a href="#contacte">Contacte</a>
+		</nav>
+		
+	</header>
+	<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<div class="hamburger-menu">
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Acasa</li></a>
+			<a href="#servicii"><li>Servicii</li></a>
+			<a href="#echipa"><li>Echipa</li></a>
+			<a href="#despre-noi"><li>Despre noi</li></a>
+			<a href="#contacte"><li>Contacte</li></a>
+    </ul>
+  </div>
+</nav>
+</div>
+	<section class="banner" loading="lazy"></section>
+	<div class="css-slider-wrapper">
+  <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+  <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+  <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+  
+  <div class="slider-pagination">
+    <label for="slider_1" class="page1"></label>
+    <label for="slider_2" class="page2"></label>
+    <label for="slider_3" class="page3"></label>
+    
+  </div>
+  <div class="next control">
+    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
+    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
+    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
+    
+  </div>
+  <div class="previous control">
+    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
+    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
+    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
+    
+  </div>
+  <div class="slider slide1">
+    <div class="displaynone">
+      <h2>Css Based slider</h2>
+      <a href="http://www.htmllion.com/pure-css-based-fullscreen-slider.html" class="button">Back</a>  <a href="#" class="button">Download</a> </div>
+  </div>
+  <div class="slider slide2">
+    <div class="displaynone">
+      <h2>CSS Slider without use of any javascript or jQuery</h2>
+      <a href="http://www.htmllion.com/pure-css-based-fullscreen-slider.html" class="button">Back</a> <a href="#" class="button">Download</a> </div>
+  </div>
+  <div class="slider slide3">
+    <div class="displaynone">
+      <h2>Full screen animation slider</h2>
+      <a href="http://www.htmllion.com/pure-css-based-fullscreen-slider.html" class="button">Back</a> <a href="#" class="button">Download</a> </div>
+  </div>
+ 
+</div>
+
+	<script type="text/javascript">
+		window.addEventListener("scroll",function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+<script>
+		const marker = document.querySelector('#marker');
+		const item = document.querySelectorAll('nav a');
+
+		function indicator(s)
+		{
+			marker.style.left = s.offsetLeft+'px';
+			marker.style.width = s.offsetWidth+'px';
+		}
+
+		item.forEach(Link => {
+			Link.addEventListener('click', (s)=> {
+				indicator(s.target);
+			})
+		})
+	</script>
+	<div id="servicii"></div>
+	<div class="services">
+
+		<p class="services-intro">Servicii</p>
+
+		<div class="services-line"></div>
+		</div>
+	
+
+
+
+    <script type="text/javascript">
+
+
+		    	
+		function show_text_block() {
+		  var x = document.getElementById("services_text_block");
+		  var y = document.getElementById("button-7");
+		   x.style.display = "block";
+		   y.style.display = "block";
+		   
+		}
+
+		function show_text_more() {
+		  var x = document.getElementById("services_text_more");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		    document.getElementById("text_more_less").innerHTML = "Citeste mai putin...";
+		  } 
+		  else
+		  {
+		  	x.style.display = "none";
+		  	document.getElementById("text_more_less").innerHTML = "Citeste mai departe...";
+		  }
+		}
+				function services_text_chooser(i)
+				{
+					 var x = document.getElementById("text_more_less");
+					if (i==1)
+					{
+						document.getElementById("services_text_block").innerHTML = "<h3>Ce este un implant dentar ?</h3> </br> Implantul dentar este un dispozitiv 100% biocompatibil cu organismul uman, sub forma de surub din titan de inalta puritate care se insereaza in arcada dentara in locul unui dinte extras si suplineste cu succes rolul radacinii dintelui natural. Este o descoperire extraordinara in stomatologia moderna, care a ajuns la aceasta ora sa fie folosita in mod curent in clinicile dentare. </br></br>Implanturile dentare pot inlocui un dinte lipsa, fara a fi afectati dintii vecini sau pot inlocui un grup de dinti lipsa, acolo unde nu mai exista dinti naturali pe care sa se sprijine o lucrare dentara. De asemenea, pot sustine o lucrare fixa la pacientii care pana acum aveau doar optiunea unei proteze dentare mobile.";
+
+
+						document.getElementById("services_text_more").innerHTML = "<h3>Beneficii implanturi dentare:</h3></br> <h4>Prevenirea migratiilor dintilor</h4> Inserarea unei radacini artificiale opreste procesul natural de migrare a dintilor invecinati spre spatiul ramas gol. Migrarea acestora poate conduce la acumularea deranjanta de resturi alimentare intre dinti dupa fiecare masa si chiar la crearea in timp a unor spatii inestetice intre acestia.</br></br> <h4>Stabilitate</h4> Un implant dentar reuseste sa ofere o priza foarte buna, fiind integrat in tesutul osos, permitand refacerea coroanei dentare si reluarea functiilor masticatorii.</br></br> <h4> Evita Tratamentele Complexe</h4> Dupa extractie, osul care a sustinut dintele isi reduce dimensiunile in timp. Prin inserarea unui implant dupa extractie, se evita procesele de atrofie osoasa, resorbtie osoasa si retractie gingivala, tesuturile din jurul radacinii dintelui care a fost extras mentinandu-si forma lor naturala. </br></br> <h4> Solutie pe termen lung </h4> Durata medie de folosire in SUA a unui implant dentar este de 15-25 de ani, insa se asteapta ca sistemele de generatie noua sa poata fi folosite chiar toata viata. Aceasta solutie este si una estetica, evitandu-se in cazul pacientilor cu mai multi dinti lipsa modificarile aspectului fetei. </br></br> <h4>Dintii vecini nu sunt afectati</h4> Aceasta solutie a implantologiei moderne permite evitarea interventiei asupra dintilor vecini – se intervine exclusiv in zona dintelui sau dintilor lipsa. Confortul pacientului in cazul tratamentului prin implanturi dentare este asemanator confortului oferit de un dinte natural. </br></br> <h4>Bucuria unei vieti noi</h4> Pentru pacientii purtatori de proteza, o lucrare fixa pe implanturi dentare va reprezenta o schimbare majora in bine. Ei vor zambi mai mult, vor socializa mai usor, vor consuma alimente fara restrictii vor fi mai optimisti si isi vor putea mentine mai usor sanatatea generala.</br></br><h3>Care sunt etapele implantului dentar?</h3>Pentru a începe acest proces într-un mod corect, se efectuează un consult de specialitate. După această etapă urmează interpretarea rezultatelor de către un medic specialist. Odată ce s-a ajuns la un numitor comun între pacient și doctor privind toate detaliile operațiunii, se efectuează o anesteziere prin sedare conștientă pentru ca pacientul să nu simtă durere.</br></br> Pregătirea gingiei și grefa de os sunt următoarele etape. Implantul este inserat printr-o incizie în gingie. Dacă nu este suficient os, se apelează la o grefă de os. După această operație, medicul implantolog va introduce propriu-zis implantul în țesutul osos. După intervenție se pot prescrie un set de medicamente pentru a ameliora durerea și inflamația. </br></br>Următoarea etapă post-procedură este scoaterea firelor de sutură după aproximativ 7 zile și o refacere a celulelor oasoase, acestea, așezându-se pe os într-o perioadă cuprinsă între 3 și 9 luni. Bontul de vindecare este etapa ulterioară, atașarea acestora se realizează la aproximativ 6 luni după operație.</br></br> Penultima etapă este îngrijirea post-operație, alcătuindu-se din igiena dentară zilnică care trebuie tratată cu maximă seriozitate, însoțită de un periaj și dertartraj profesional la fiecare 6 luni și vizite regulate la dentist. Operațiunea are ca etapă finală, procedura unde medicul specializat în protetică dentară colaborează cu tehnicianul pentru realizarea coroanei, a punții dentare sau a dintelui propriu-zis";
+						x.style.display = "block";
+					}
+					if (i==2)
+					{
+						document.getElementById("services_text_block").innerHTML = " <h3>Extracția dentară</h3> reprezintă înlăturarea unui dinte ce nu mai poate fi salvat și provoacă doar daune pacientului prin răspândirea procesului inflamator la nivelul radăcinii dintelui.<h3> Care sunt cele mai importante masuri de precautie după efectuarea extracției dentare?</h3> </br></br>  <h4> 1.	Evitati alimentele si bauturile calde </h4>Este bine sa evitati consumul de alimente foarte calde in primele 2-3 zile dupa extractie deoarece acestea pot dilata vasele de sange si astfel vor putea aparea mici sangerari. Acest aspect este si mai important imediat dupa extractie, pana ce efectul anesteziei trece. Sub efectul anesteziei nu veti putea simti corect temperatura alimentelor existand riscul aparitiei unor arsuri la nivelul mucoasei orale. O alta posibila problema atat timp cat sunteti sub efectul anesteziei este muscarea obrajilor sau a limbii datorita disparitiei senzatiei tactile.";
+						document.getElementById("services_text_more").innerHTML = "</br></br><h4>2.	Nu va clatiti in zona extractiei</h4> Este important sa nu deranjati cheagul de sange ce se formeaza in orificiul ramas dupa inlaturarea dintelui. Acesta reprezinta cea mai buna protectie impotriva infectiei si tot el va initia procesul de vindecare. In consecinta, nu va clatiti in zona extractiei (cu nici un fel de solutie) si evitati sa deranjati cheagul cu limba in primele 24 de ore dupa extractie. </br></br> <h4>3.	Evitati alcoolul si fumatul cel putin in prima zi</h4> Bauturile alcoolice pot conduce la aparitia sangerarilor si intarzie procesul de vindecare. De asemenea, fumatul creste presiunea sanguina ceea ce poate creste riscul sangerarilor. Va recomandam sa evitati fumatul si consumul de bauturi alcoolice cel putin in prima zi dupa efectuarea extractiei. Complicații: Alveolita postextracțională este o complicație stomatologică care, așa cum îi spune și numele, apare în urma unei extracții dentare. Se caracterizează prin formarea unui cheag de sânge, care poate fi purulent sau nu, și principalul simptom care o dă de gol sunt durerile severe în regiunea dintelui extras. Această complicație poate fi ușor evitată dacă se respectă recomandările medicului stomatolog la finisarea extracției.";
+						x.style.display = "block";
+					}
+					if (i==3)
+					{
+						document.getElementById("services_text_block").innerHTML = "<h3>Ce este proteza dentara?</h3> </br></br>Proteza dentara este un dispozitiv medical unic, personalizat, realizat in scopul restaurarii integritatii arcadelor dentare. Orice proteza este alcatuita din saua protezei si garnitura de dinti. Saua protezei este confectionata de obicei din rasina acrilica dar uneori are si o componenta metalica. Garnitura de dinti montata pe saua protezei poate fi din acrilat, compozit sau ceramica. </br></br>Fațetele dentare reprezintă o variantă minim invazivă de refacere sau îmbunătățire a formei dinților frontali, prin aplicarea pe partea exterioară, folosind cimenturi de o culoare identică cu cea a dintelui natural. Atunci când caria din dinte este prea mare, se va acoperi cu o coroană dentară, ca să poată rezista în continuare la presiunea masticatorie.";
+						document.getElementById("services_text_more").innerHTML = "</br></br>Coroanele ceramice cu suport de zirconiu constituie o metodă modernă de tratament. Lipsa interiorului metalic conferă un aspect identic cu cel al dinților naturali. În momentul în care există dinți lipsă, se apelează la lucrări protetice (punți dentare) sau la reconstrucția prin coroane pe implant. Pentru rezultate estetice deosebite se pot folosi bonturi aplicate pe implant realizate de asemenea din zirconiu.</br></br> Puntea dentară este o metodă de înlocuire a unui sau mai mulți dinți pierduți. Punțile dentare sunt fixe, în sensul că sunt cimentate pe dinții de suport sau, în unele cazuri, sunt montate pe implanturi localizate în locul sau în imediata apropiere a dintelui lipsă.</br></br><h4> Tipuri de proteze de dentare </h4> </br></br>•	proteze dentare partiale: se folosesc atunci cand exista dinti restanti pe arcada,dar nu se poate realiza o punte dentara fixa. Se folosesc in special in edentatiile terminale si subtotale. acest tip de proteza foloseste ca element de agregare crosete metalice atasate dintilor restanti sau pelote din acrilat. </br></br>•	proteze dentare totale: se utilizeaza cand pacientul a pierdut toti dintii si trebuie restaurata functia estetica, masticatorie si de fonatie.</br></br> •	proteze scheletate: sunt dispozitive complexe alcatuite ,fixa(coroane sau punti dentare) si o parte mobilizabila. Legatura dintre aceste doua parti se realizeaza cu ajutorul unor mijloace speciale de mentinere, sprijin si stabilizare cum sunt capsele, culisele, telescoape, pinteni sau magneti. Protezele pe implanturi dentare reprezinta o varianta mai noua. Sunt doua tipuri de proteze pe implanturi dentare:</br></br> •	Proteze fixe pe implanturi dentare: Sunt proteze ce pot fi indepartate de pe campul protetic numai de catre medicul dentist in cabinet si au in structura lor un schelet metalic din titan sau crom-cobalt si o parte acrilica, fixandu-se pe implant prin insurubare. Acest tip de proteza se poate utiliza si in cazul in care exista atrofie mare a osului, cu conditia sa fie inserat un numar mai mare de implanturi.</br></br> •	Proteza mobila pe implanturi dentare: Aceste proteze sunt agregate de implanturi cu ajutorul unor sisteme speciale, putand fi demontate si igienizate de catre pacient.";
+						x.style.display = "block";
+					}
+					if (i==4)
+					{
+						document.getElementById("services_text_block").innerHTML = "<h3>Ortodonţia</h3></br> este o specializare a medicinei dentare care se ocupă de corectarea anomaliilor dentomaxilare. Dinţii strâmbi sau care nu sunt aliniaţi corect sunt mai greu de întreţinut, pot fi pierduţi mai devreme datorită carierii şi parodontopatiei, şi obligă muşchii masticatori la un efort suplimentar, ce poate duce la dureri de cap, disfuncţia ATM şi dureri la nivelul gâtului, umărului şi spatelui. Un alt dezavantaj este aspectul inestetic al dinţilor strâmbi sau nealiniaţi corect. La ce ajută tratamentul ortodontic? Există multe tipuri de aparate atât fixe, cât şi mobile, pentru realinierea dinţilor, reantrenarea muşchilor şi influenţarea creşterii maxilarelor. Aparatele ortodontice funcţionează prin exercitarea unei presiuni uşoare asupra dinţilor şi maxilarelor. În funcţie de severitatea problemei dvs., medicul dentist va recomanda tipul de aparat corespunzător. Avantajele tratamentului ortodontic includ o mai bună sănătate orală, un aspect mai plăcut şi o durabilitate mai mare a dinţilor.";
+						document.getElementById("services_text_more").innerHTML = "";
+						x.style.display = "none";
+					}
+					if (i==5)
+					{
+						document.getElementById("services_text_block").innerHTML = "<h3>Caria dentara</h3></br> Smalțul dentar este învelișul protector al dintelui și cea mai dură componentă a sa. Smalțul nu are nervi sau vase de sânge, nefiind sensibil la durere. Dedesubt se află dentina, cea mai mare parte a dintelui și care este sensibilă la durere. Dentina acoperă pulpa dintelui, un țesut moale ce conține vase de sânge și nervi, fiind situată în mijlocul dintelui. După ce consumăm alimente cu o concentrație mare de zahăr, bacteriile descompun zahărul în acizi ce atacă smalțul. Caria dentară apare în momentul în care smalțul și dentina se înmoaie sub acțiunea atacului acid și se produce o cavitate. Odată ce a trecut de smalț, caria înaintează mai rapid prin dentină și ajunge la pulpă, producând inflamația și infecția. Cariile reprezintă una dintre cele mai răspândite probleme dentare, afectând aproximativ jumătate din adulți. Părțile cele mai predispuse la carii sunt suprafețele dinților ce constituie mușcătura și zonele dintre dinți, locul în care deseori rămân resturi alimentare.";
+						document.getElementById("services_text_more").innerHTML = " <h3>Cauze</h3></br> Cariile dentare sunt cauzate de placa bacteriană ce descompune zaharurile în acizi, atacând dintele. Odată ce alimentele dulci au pătruns în cavitatea bucală, sărurile din salivă încep acțiunea de reparare a smalțului. Acest proces durează in jur de 40 de minute. Cariile apar datorită atacurilor acide repetate, când saliva nu reușește să restabilească echilibrul. Nu doar zaharurile sunt un dușman al sănătății orale, ci și mâncărurile cu carbohidrați și băuturile acidulate produc placa bacteriană. Gustările repetate prezintă un risc crescut, deoarece dinții se află sub atac constant și nu au timp să se refacă. Există un foarte mic procent de persoane care par a fi imune la carii, însă cei mai mulți dintre cei care nu respectă igiena orală vor avea unul sau mai mulți dinți cariați. <h3>Tratament</h3></br>  Obturațiile reprezintă cel mai comun tratament al cariei. Medicul va elimina toată zona afectată și va umple cavitatea cu material special . Dacă s-a ajuns în stadiul de infecție și abces dentar, atunci se efectuează obturația de canal, în cazurile cele mai grave fiind necesară extracția.";
+						x.style.display = "block";
+					}
+					if (i==6)
+					{
+						document.getElementById("services_text_block").innerHTML = "<h3>Paradontologia</h3></br> Este acea specialitate a medicinei dentare care se ocupa cu studiul intregului sistem ce mentine dintii in oasele maxilare, acest sistem fiind numit parodontiu sau spatiu periodontal. Parodontologia studiaza anatomia, fiziologia parodontiului marginal, precum si bolile care il afecteaza si posibilitatile de tratament. </br><h3>Ce este boala parodontala(parodontopatia)?</h3></br> Exista o serie de imbolnaviri ale parodontiului marginal numite boli parodontale, parodontopatii sau avand denumirile populare parodontoza / paradontoza. Aceste afectiuni sunt cel mai frecvent de etiologie bacteriana fiind cauzate de biofilmul de pe suprafata dentara si intretinute de numerosi factori favorizanti printre care amintim tartrul, cariile dentare, lucrarile protetice incorect realizate,";
+						document.getElementById("services_text_more").innerHTML = "anumite   stari fiziologice (sarcina, menstruatie, pubertate, menopauza),  anumite medicamente sau afectiuni generale (diabet, anemii, tulburari imunodeficitare, etc). Pot fi gingivite (formele usoare) sau parodontite (parodontoza) care reprezinta formele mai avansate,acestea lasate netratate, duc la pierderea treptata a dintilor. Forma cea mai usoara de imbolnavire este gingivita, cauzata cel mai frecvent de o igiena orala neadecvata si care, netratata, poate conduce spre forma mai grava de imbolnavire, parodontita (parodontoza). Cine are nevoie de o vizita la medicul parodontolog? •	daca observati in timpul periajului sau spontan, ca gingiile va sangereaza, •	daca acestea sunt rosii si inflamate, •	daca aveti retractii gingivale cu expunerea radacinilor dentare, •	daca observati ca dintii dumneavoastra au capatat mobilitate sau au inceput sa se deplaseze, lasand spatii intre ei, aveti urgent nevoie de o consultatie de specialitate la un medic parodontolog.";
+						x.style.display = "block";
+					}
+
+					var x = document.getElementById("services_text_more");
+					x.style.display = "none";
+		  			document.getElementById("text_more_less").innerHTML = "Citeste mai departe...";
+
+				}
+
+				
+    </script>
+    
+    <div class="services-blocks">
+		<div onclick="show_text_block(); services_text_chooser(1);" class="button" id="button-6" >
+    	
+    	<div id="spin"></div>
+    	<img src="icons/implant.png" class="img-services">
+		<a>Implantologie</a>
+	
+	</div>
+
+    <div onclick="show_text_block(); services_text_chooser(2);" class="button" id="button-6" >
+    	<div id="spin"></div>
+		<img src="icons/chirurgie.png" class="img-services">
+		<a>Chirurgie</a>
+	</div>
+
+	<div onclick="show_text_block(); services_text_chooser(3);" class="button" id="button-6" >
+    	<div id="spin"></div>
+		<img src="icons/protetica.png" class="img-services">
+		<a>Protetica</a>
+	</div>
+
+	<div onclick="show_text_block(); services_text_chooser(4);" class="button" id="button-6" >
+    	
+    	<div id="spin"></div>
+    	<img src="icons/ortodontie.png" class="img-services">
+		<a>Ortodontie</a>
+	
+	</div>
+
+    <div onclick="show_text_block(); services_text_chooser(5);" class="button" id="button-6" >
+    	<div id="spin"></div>
+		<img src="icons/terapie.png" class="img-services">
+	</br>
+		<a>Terapie</a>
+	</div>
+
+	<div onclick="show_text_block(); services_text_chooser(6);" class="button" id="button-6" >
+    	<div id="spin"></div>
+		<img src="icons/paradontologie.png" class="img-services">
+		<a>Paradontologie</a>
+	</div>
+     
+    <div id="services_text"></div>
+    </div>
+
+    <div id="services_text_block" class="services-text" style="display: none;">
+    	
+  Text block for services, if this shit dosnt work ask Dredd from ApricotStudio.
+  Shit happens. We're sorry for this.
+</div>
+<div id="services_text_more" class="services-text" style="display: none;">
+  Text block for services, if this shit dosnt work ask Dredd from ApricotStudio.
+  Shit happens. We're sorry for this.
+</div>
+<div onclick="show_text_more();" class="button2" id="button-7"  style="display: none; text-align: center;">
+    	
+    	<div id="spin"></div>
+		<a href="#services_text" id="text_more_less">Citeste mai departe...</a>
+	
+	</div>
+<div id="echipa"></div>
+<div class="echipa-noastra-root">
+<div class="services">
+
+		<p class="services-intro">Echipa</p>
+		<div class="services-line"></div>
+		</div>
+<div class="echipa-noastra-slider">
+  <section class="customer-logos slider">
+    <div class="slide"><img src="images/image1.JPG"><p><b>Dr.Stasoc Ghenadie</b><br>Stomatolog Categorie Superioara<br>Chirurgie dento-alveolara</p></div>
+    <div class="slide"><img src="images/image2.JPG"><p><b>Dr.Marcel Bujor</b><br>Protetica</p></div>
+    <div class="slide"><img src="images/image3.JPG"><p><b>Dr.Cucer Tatiana</b><br>Terapie Dentara</p></div>
+    <div class="slide"><img src="images/image4.JPG"><p><b>Dr.Guidea Ludmila</b><br>Terapie Dentara</p></div>
+    <div class="slide"><img src="images/image5.JPG"><p><b>Victoria Balan</b><br>Asistent Medical</p></div>
+    <!--<div class="slide"><img src="images/image6.JPG"><p><b>Ursu Aurica</b><br>Asistent Medical</p></div>-->
+    <!--<div class="slide"><img src="images/image7.JPG"><p><b>Tatiana Borodachi</b><br>Asistent Medical</p></div>-->
+    <div class="slide"><img src="images/image8.JPG"><p><b>Smolevschi Nadejda</b><br>Asistent Medical</p></div>
+    <div class="slide"><img src="images/image9.JPG"><p><b>Sevciuc Tatiana</b><br>Registratura</p></div>
+  </section>
+</div>
+</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1750,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});
+	</script>
+	<div id="despre-noi"></div>
+<div class="about-us-root">
+	<div class="services">
+
+		<p class="services-intro margin100">Despre noi</p>
+		<div class="services-line"></div>
+		</div>
+		
+		<img src="images/sg-logo.png" class="about-logo">
+		<p class="about-text">
+			I.I.Stașoc & SRL SG-Dent activează din anul 1996, fiind înființată pentru oferirea unor servicii stomatologice calitative pentru un grup vast de pacienți și tratarea diferitor dereglări ale integrității cavității bucale. La momentul de față avem în dotare trei cabinete destinate terapiei dentare și câte unul pentru chirurgie și protezare. Deținem un personal calificat reprezentat de medici cu staj de zeci de ani cât și de tineri specialiști ce mereu sunt gată să introducă noi tehnologii pentru îmbunătățirea serviciilor stomatologice pe care le prestăm. Pentru a vă face zâmbetul frumos, mereu ne îmbunătățim echipamentul cu care lucrăm iar comunicarea cu pacientul e ceea ce ne reprezintă. Vă așteptăm cu drag!
+		</p>
+</div>
+<div class="review-root">
+<div class="testimonials">
+      <div class="inner">
+        
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/testimonial/img1.jpg" alt="">
+              <div class="name"><b>Delia Holban</b></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                SG-Dent, clinica care mereu sa evidențiat prin personal calduros și comunicare abundentă cu pacienții. Sunt după fire curioasă și evident e că dădeam întrebări referitor la cum mi se va trata dantură și mereu primeam explicații decente. Am recomandat mereu această clinică pentru medici și atmosferă călduroasă în care ești înconjurată.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/testimonial/img2.jpg" alt="">
+              <div class="name"><b>Ludmila Crăciun</b></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                De această clinică auzisem de mult timp dar necesitate să o vizitez nu a fost până în momentul în care am dorit să îmi restaurez dantura cu ajutorul implantelor. Acum sunt mulțumită chirurgului care înțelege frica pacientului și se adaptează la fiecare persoană în parte, mă pot bucura de placerea vieții, și anume de a mânca ce doresc.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/testimonial/img3.jpg" alt="">
+              <div class="name"><b>Darii Petru</b></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p style="padding-bottom: 20px;">
+                Mă tratez la această clinică de circa 2 ani și nu a fost nici odata sa am vre-un regret. Medicii mereu îți vorbesc cu simpatie și înțelegere iar echipamentul pe care îl dețin este modern
+                 .Sunt bucuros ca am ales aceasta clinca.Am încredere în medicii și voi merge în continuare la medicului meu din clinica respectiva.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="contacte"></div>
+<div class="contact-us-root" >
+	<div class="services">
+
+		<p class="intro-intro">
+		Contacte:	
+		</br>tel: 022 311 131
+		 </br><a href="https://www.facebook.com/sgdentmd" style="color: black;">fb.com/sgdentmd
+		 </a>
+		</br> Strada Tudor Vladimirescu 3
+		</br> 9:00 - 19:00 Luni-Vineri
+	    </br> 10:00 - 14:00 Sambata
+		</br> <img src="images/sg-text.png" style="width: 100%;height: auto;"></p>
+		<div class="services-line"></div>
+		</div>
+		<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=chisinau%20moldova%20sg-dent&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2torrentz.net">torrent searh engine</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+		<div class="contacts-info">
+
+		</div>
+
+		
+</div>
+</div>
+<footer>
+	<p class="footer-text" >
+		<a href="https://www.facebook.com/fray.stun" class="footer-text">&copy; Developed by ApricotStudio.</a>
+	</p>
+</footer>
+
+</body>
+</html>
